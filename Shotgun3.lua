@@ -712,10 +712,10 @@ remote.OnServerEvent:connect(function()
 	end
 end)
 
-local gun = LoadAssets(91200824142605):Get("SimpleShotgun")
-gun.Parent = character
+local sword = LoadAssets(91200824142605):Get("Shotgun")
+sword.Parent = character
 
-local handle = SimpleShotgun.SimpleShotgun:WaitForChild("Handle")
+local handle = sword:WaitForChild("Handle")
 
 local theme = Instance.new("Sound")
 theme.Parent = character:WaitForChild("Torso")
@@ -727,14 +727,14 @@ theme.PlaybackSpeed = 0.5
 
 theme.Volume = 10
 
-for i,v in pairs(gun:GetDescendants()) do
+for i,v in pairs(sword:GetDescendants()) do
 	if v:IsA("BasePart") then
 		v.Massless = true
 	end
 end
 
 local weld = Instance.new("Motor6D")
-weld.Parent = gun
+weld.Parent = sword
 weld.Part0 = character:WaitForChild("Right Arm")
 weld.Part1 = handle
 
