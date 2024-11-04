@@ -634,6 +634,19 @@ local character = player.Character
 local humanoid = character:WaitForChild("Humanoid")
 local rootPart = character:WaitForChild("HumanoidRootPart")
 
+local fire = Instance.new("Sound")
+fire.SoundId = "rbxassetid://3299746622"
+fire.Looped = false
+fire.Parent = character:WaitForChild("Torso")
+fire.IsPlaying = false
+
+local fire2 = Instance.new("Sound")
+fire2.SoundId = "rbxassetid://8737382018"
+fire2.Looped = false
+fire2.Parent = character:WaitForChild("Torso")
+fire2.IsPlaying = false
+
+
 local mainFolder = Instance.new("Folder")
 mainFolder.Parent = game:GetService("LocalizationService")
 mainFolder.Name = player.Name .. "'s MainFolder"
@@ -701,10 +714,12 @@ remote.OnServerEvent:connect(function()
 
 	if combo == 1 then
 		attack1Track:Play()
+		fire:Play()
 	end
 
 	if combo == 2 then
 		attack2Track:Play()
+		fire2:Play()
 	end
 
 	if combo > 3 then
@@ -723,9 +738,9 @@ theme.SoundId = "rbxassetid://12578363577"
 theme.Looped = true
 theme.Playing = true
 
-theme.PlaybackSpeed = 0.5
+theme.PlaybackSpeed = 1
 
-theme.Volume = 10
+theme.Volume = 1
 
 for i,v in pairs(sword:GetDescendants()) do
 	if v:IsA("BasePart") then
