@@ -738,9 +738,9 @@ theme.SoundId = "rbxassetid://12578363577"
 theme.Looped = true
 theme.Playing = true
 
-theme.PlaybackSpeed = 0.5
+theme.PlaybackSpeed = 1
 
-theme.Volume = 10
+theme.Volume = 0
 
 for i,v in pairs(sword:GetDescendants()) do
 	if v:IsA("BasePart") then
