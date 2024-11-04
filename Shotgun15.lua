@@ -627,7 +627,7 @@ local idleAnimation = loadstring(HttpService:GetAsync("https://raw.githubusercon
 local runAnimation = loadstring(HttpService:GetAsync("https://raw.githubusercontent.com/SkiddedUser/Walk-Anim-shotgun/refs/heads/main/walk.lua", true))()
 
 local attack1Animation = loadstring(HttpService:GetAsync("https://raw.githubusercontent.com/SkiddedUser/Shot/refs/heads/main/Shot.lua", true))()
-local attack2Animation = loadstring(HttpService:GetAsync("https://raw.githubusercontent.com/SkiddedUser/Shot2/refs/heads/main/Shot2.lua", true))()
+local attack2Animation = loadstring(HttpService:GetAsync("https://raw.githubusercontent.com/SkiddedUser/Shot2/refs/heads/main/Shot3.lua", true))()
 
 local player = owner
 local character = player.Character
