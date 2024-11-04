@@ -638,13 +638,13 @@ local fire = Instance.new("Sound")
 fire.SoundId = "rbxassetid://3299746622"
 fire.Looped = false
 fire.Parent = character:WaitForChild("Torso")
-fire.IsPlaying = false
+fire.Playing = false
 
 local fire2 = Instance.new("Sound")
 fire2.SoundId = "rbxassetid://8737382018"
 fire2.Looped = false
 fire2.Parent = character:WaitForChild("Torso")
-fire2.IsPlaying = false
+fire2.Playing = false
 
 
 local mainFolder = Instance.new("Folder")
@@ -738,9 +738,9 @@ theme.SoundId = "rbxassetid://12578363577"
 theme.Looped = true
 theme.Playing = true
 
-theme.PlaybackSpeed = 1
+theme.PlaybackSpeed = 0.5
 
-theme.Volume = 1
+theme.Volume = 10
 
 for i,v in pairs(sword:GetDescendants()) do
 	if v:IsA("BasePart") then
